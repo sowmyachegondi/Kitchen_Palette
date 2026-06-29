@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Kitchen Palette Login</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <h1>Login</h1>
+
+        <div class="input-group">
+
+            <label>Email</label>
+
+            <input type="email"
+                   id="email"
+                   placeholder="example@gmail.com"
+                   required>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Password</label>
+
+            <input type="password"
+                   id="password"
+                   placeholder="must be 8 characters"
+                   required>
+
+            <p class="small">
+                must be 8 characters
+            </p>
+
+        </div>
+
+        <button class="auth-btn"
+                onclick="login()">
+
+            Login
+
+        </button>
+
+        <p style="text-align:center; margin-top:20px;">
+            Or Login with
+        </p>
+
+        <button class="google-btn">
+
+            Continue with Google
+
+        </button>
+
+        <div class="bottom-text">
+
+            Don't have an account?
+
+            <a href="signup.html">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Beverages</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Kitchen Palette
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="lunch.html">Lunch/Dinner</a>
+        <a href="snacks.html">Snacks</a>
+        <a href="sweets.html">Sweets</a>
+        <a href="chutneys.html">Chutneys</a>
+        <a href="beverages.html">Beverages</a>
+        
+    </nav>
+
+</header>
+<div class="search-container">
+
+    <input type="text"
+           id="searchInput"
+           placeholder="Search recipe...">
+
+    <button onclick="searchRecipe()">
+        🔍 Search
+    </button>
+
+    <a href="favorites.html"
+       class="fav-btn">
+
+        ❤ Favourites
+
+    </a>
+
+</div>
+
+<h1 class="page-title">
+    Beverages
+</h1>
+
+<!-- Strawberry Milkshake -->
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>🍓 Strawberry Milkshake</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Strawberry, Milk,
+            Sugar, Ice Cream.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Blend all ingredients
+            until smooth and serve cold.
+        </p>
+
+        <button onclick="addFavourite('Strawberry Milkshake')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+
+        <img src="images/milkshake.jpg"
+             alt="Milkshake">
+
+    </div>
+
+</div>
+
+<!-- Cold Coffee -->
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>🧊 Cold Coffee</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Coffee Powder,
+            Milk,
+            Sugar,
+            Ice Cubes.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Blend coffee,
+            milk and sugar.
+            Serve chilled.
+        </p>
+
+        <button onclick="addFavourite('Cold Coffee')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+
+        <img src="images/coffee.jpg"
+             alt="Cold Coffee">
+
+    </div>
+
+</div>
+
+<script src="js/favourites.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chutneys</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Kitchen Palette</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="lunch.html">Lunch/Dinner</a>
+        <a href="snacks.html">Snacks</a>
+        <a href="sweets.html">Sweets</a>
+        <a href="chutneys.html">Chutneys</a>
+        <a href="beverages.html">Beverages</a>
+        
+    </nav>
+</header>
+<div class="search-container">
+
+    <input type="text"
+           id="searchInput"
+           placeholder="Search recipe...">
+
+    <button onclick="searchRecipe()">
+        🔍 Search
+    </button>
+
+    <a href="favorites.html"
+       class="fav-btn">
+
+        ❤ Favourites
+
+    </a>
+
+</div>
+<h1 class="page-title">Chutneys</h1>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>🍅 Tomato Chutney</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Tomatoes, Onion,
+            Garlic, Tamarind
+            and Red Chilies.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Cook ingredients,
+            grind and temper.
+        </p>
+
+        <button onclick="addFavourite('Tomato Chutney')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/tomato.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>🥥 Coconut Chutney</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Coconut, Chana Dal,
+            Ginger and Green Chilies.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Grind ingredients,
+            add tempering and serve.
+        </p>
+
+        <button onclick="addFavourite('Coconut Chutney')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/coconut.jpg">
+    </div>
+
+</div>
+
+<script src="js/favourites.js"></script>
+
+</body>
+</html>

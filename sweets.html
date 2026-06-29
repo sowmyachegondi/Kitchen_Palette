@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sweets</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Kitchen Palette
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="lunch.html">Lunch/Dinner</a>
+        <a href="snacks.html">Snacks</a>
+        <a href="sweets.html">Sweets</a>
+        <a href="chutneys.html">Chutneys</a>
+        <a href="beverages.html">Beverages</a>
+        
+    </nav>
+
+</header>
+
+<div class="search-container">
+
+    <input type="text"
+           id="searchInput"
+           placeholder="Search recipe...">
+
+    <button onclick="searchRecipe()">
+        🔍 Search
+    </button>
+
+    <a href="favorites.html"
+       class="fav-btn">
+
+        ❤ Favourites
+
+    </a>
+
+</div>
+
+<h1 class="page-title">Sweets</h1>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>🍮 Carrot Halwa</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Carrot, Milk, Sugar,
+            Ghee, Cardamom and Cashews.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Cook carrots with milk,
+            add sugar and ghee,
+            then garnish with nuts.
+        </p>
+
+        <button onclick="addFavourite('Carrot Halwa')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/halwa.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>🍚 Payasam</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Rice, Milk, Sugar,
+            Cardamom and Cashews.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Cook rice in milk,
+            add sugar and garnish
+            with fried nuts.
+        </p>
+
+        <button onclick="addFavourite('Payasam')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/payasam.jpg">
+    </div>
+
+</div>
+
+<script src="js/favourites.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

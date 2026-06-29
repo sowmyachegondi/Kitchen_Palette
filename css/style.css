@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#F6F0EA;
+}
+
+/* LOGIN & SIGNUP */
+
+.auth-page{
+    background:#7C2929;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.auth-container{
+    width:420px;
+    background:#FFF8F0;
+    padding:40px;
+    border-radius:30px;
+}
+
+.auth-container h1{
+    text-align:center;
+    color:#7C2929;
+    margin-bottom:30px;
+}
+
+.input-group{
+    margin-top:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:12px;
+}
+
+.small{
+    color:gray;
+    font-size:13px;
+    margin-top:5px;
+}
+
+.auth-btn{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#DDB84A;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.google-btn{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border-radius:30px;
+    border:1px solid gray;
+    background:white;
+    cursor:pointer;
+}
+
+.bottom-text{
+    text-align:center;
+    margin-top:20px;
+}
+
+.bottom-text a{
+    color:#7C2929;
+    text-decoration:none;
+}
+
+/* NAVBAR */
+
+header{
+    width:95%;
+    margin:20px auto;
+    background:#7C2929;
+    padding:18px 30px;
+    border-radius:40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#F2D15C;
+}
+
+/* HOME */
+
+.home-container{
+    width:90%;
+    margin:auto;
+    margin-top:50px;
+}
+
+.home-container h1{
+    color:#5A1A1A;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.home-container p{
+    font-size:22px;
+    line-height:38px;
+    text-align:justify;
+}
+
+.quote{
+    text-align:center;
+    margin-top:50px;
+
+    color:#B46666;
+
+    font-size:42px;
+
+    font-style:italic;
+}
+
+.home-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:100px;
+}
+
+.home-buttons button{
+    background:#DDB84A;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+.home-buttons button:hover{
+    transform:scale(1.05);
+}
+
+
+/* RECIPE PAGE */
+
+.page-title{
+    width:90%;
+    margin:30px auto;
+    color:#7C2929;
+    font-size:40px;
+}
+
+.recipe-card{
+    width:90%;
+    margin:30px auto;
+    background:#ffffff;
+    border-radius:30px;
+    padding:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:50px;
+}
+
+.recipe-content{
+    flex:1;
+}
+
+.recipe-content h2{
+    color:#7C2929;
+    font-size:48px;
+    margin-bottom:30px;
+}
+
+.recipe-content h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+.recipe-content p{
+    font-size:24px;
+    line-height:40px;
+    color:#444;
+}
+
+.recipe-image{
+    width:380px;
+}
+
+.recipe-image img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.recipe-card button{
+    margin-top:30px;
+    padding:18px 35px;
+    border:none;
+    border-radius:30px;
+    background:#DDB84A;
+    font-size:20px;
+    cursor:pointer;
+}
+
+@media(max-width:900px){
+
+    .recipe-card{
+        flex-direction:column;
+    }
+
+    .recipe-image{
+        width:100%;
+    }
+}
+
+.search-container{
+    width:90%;
+    margin:30px auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.search-container input{
+    width:400px;
+    padding:15px;
+
+    border:1px solid #ccc;
+    border-radius:30px;
+
+    font-size:16px;
+}
+
+.search-container button{
+    padding:15px 25px;
+
+    background:#DDB84A;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+}
+
+.fav-btn{
+    background:#7C2929;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+}
