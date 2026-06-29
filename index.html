@@ -2,111 +2,79 @@
 <html>
 <head>
 
-    <title>Kitchen Palette</title>
+<title>Sign Up</title>
 
-    <link rel="stylesheet"
-    href="css/style.css">
+<link rel="stylesheet"
+href="css/style.css">
 
 </head>
 
-<body>
+<body class="auth-page">
 
-<header>
+<div class="auth-container">
 
-    <div class="logo">
-        Kitchen Palette
+    <h1>Sign Up</h1>
+
+    <div class="input-group">
+        <label>Email</label>
+
+        <input
+        type="email"
+        id="email"
+        placeholder="example@gmail.com">
     </div>
 
-    <nav>
+    <div class="input-group">
+        <label>Create Password</label>
 
-        <a href="index.html">Home</a>
+        <input
+        type="password"
+        id="password"
+        placeholder="must be 8 characters">
 
-        <a href="breakfast.html">
-            Breakfast
-        </a>
+        <p class="small">
+            must be 8 characters
+        </p>
+    </div>
 
-        <a href="lunch.html">
-            Lunch/Dinner
-        </a>
+    <div class="input-group">
+        <label>Confirm Password</label>
 
-        <a href="snacks.html">
-            Snacks
-        </a>
+        <input
+        type="password"
+        id="confirm"
+        placeholder="repeat password">
+    </div>
 
-        <a href="sweets.html">
-            Sweets
-        </a>
+    <button
+    class="auth-btn"
+    onclick="signup()">
 
-        <a href="chutneys.html">
-            Chutneys
-        </a>
+        Register
 
-        <a href="beverages.html">
-            Beverages
-        </a>
+    </button>
 
-    </nav>
-
-</header>
-
-<div class="home-container">
-
-    <h1>
-        Welcome to Kitchen Palette !
-    </h1>
-
-    <p>
-
-        Kitchen Palette is a celebration
-        of flavors, traditions, and the joy
-        of cooking. Inspired by the rich
-        culinary heritage of Andhra cuisine,
-        our platform brings together a
-        carefully curated collection of
-        recipes ranging from wholesome
-        breakfasts and hearty meals to
-        delicious snacks, traditional sweets,
-        flavorful chutneys, and refreshing
-        beverages.
-
-        <br><br>
-
-        Whether you are a beginner exploring
-        the world of cooking or a food
-        enthusiast searching for authentic
-        recipes, Kitchen Palette provides
-        easy-to-follow instructions and
-        handpicked dishes that make every
-        meal memorable.
-
+    <p style="text-align:center;margin-top:20px;">
+        Or Register with
     </p>
 
-    <h2 class="quote">
+    <button class="google-btn">
+        Continue with Google
+    </button>
 
-        Where Every Recipe
-        Becomes Art
+    <div class="bottom-text">
 
-    </h2>
+        Already have an account?
 
-    <div class="home-buttons">
-
-        <button onclick="openFavorites()">
-
-            ❤ Favourite
-
-        </button>
-
-        <button onclick="openSearch()">
-
-            🔍 Search
-
-        </button>
+        <a href="login.html">
+            Log in
+        </a>
 
     </div>
 
 </div>
 
-<script src="js/search.js"></script>
+<script src="js/auth.js"></script>
 
 </body>
 </html>

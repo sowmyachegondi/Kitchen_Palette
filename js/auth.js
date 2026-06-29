@@ -46,7 +46,7 @@ function login(){
 
         alert("Login Successful");
 
-        window.location.href="index.html";
+        window.location.href="home.html";
     }
     else{
 
