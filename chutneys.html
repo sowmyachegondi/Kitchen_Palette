@@ -11,7 +11,7 @@
     <div class="logo">Kitchen Palette</div>
 
     <nav>
-        <a href="index.html">Home</a>
+        <a href="home.html">Home</a>
         <a href="breakfast.html">Breakfast</a>
         <a href="lunch.html">Lunch/Dinner</a>
         <a href="snacks.html">Snacks</a>
@@ -23,9 +23,9 @@
 </header>
 <div class="search-container">
 
-    <input type="text"
+    <!-- <input type="text"
            id="searchInput"
-           placeholder="Search recipe...">
+           placeholder="Search recipe..."> -->
 
     <button onclick="searchRecipe()">
         🔍 Search
@@ -45,24 +45,111 @@
 
     <div class="recipe-content">
 
-        <h2>🍅 Tomato Chutney</h2>
+        <h2>Ginger Chutney (Allam Pachadi)</h2>
 
         <h3>Ingredients</h3>
 
         <p>
-            Tomatoes, Onion,
-            Garlic, Tamarind
-            and Red Chilies.
+            TGinger Chutney is prepared using ½ cup of chopped fresh ginger, 2 tablespoons of tamarind pulp, 2 tablespoons of jaggery, 8–10 dried red chilies, 2 tablespoons of oil, 1 teaspoon of mustard seeds, 1 teaspoon of cumin seeds, 4 garlic cloves, a few curry leaves, and salt to taste.
         </p>
 
         <h3>Instructions</h3>
 
         <p>
-            Cook ingredients,
-            grind and temper.
+            Heat oil in a pan and fry the ginger, dried red chilies, garlic, cumin seeds, and mustard seeds until aromatic. Allow the mixture to cool, then grind it with tamarind, jaggery, and salt into a smooth paste. Prepare a tempering with mustard seeds and curry leaves if desired, mix it into the chutney, and serve with Pesarattu, Idli, Dosa, or rice.
         </p>
 
-        <button onclick="addFavourite('Tomato Chutney')">
+        <button onclick="addFavourite('Ginger Chutney (Allam Pachadi)')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/allam.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>Peanut Chutney (Verusenaga Pachadi)</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Peanut Chutney is made using 1 cup of roasted peanuts, 3–4 dried red chilies, 2 garlic cloves, 1 tablespoon of tamarind pulp, salt to taste, 1 teaspoon of mustard seeds, 1 teaspoon of split urad dal, a few curry leaves, and 2 teaspoons of oil for tempering.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+           Grind the roasted peanuts, dried red chilies, garlic, tamarind, salt, and a little water into a smooth chutney. Heat oil in a small pan, add mustard seeds, urad dal, and curry leaves, and allow them to splutter. Pour the tempering over the chutney, mix well, and serve with Idli, Dosa, Punugulu, or Upma.
+        </p>
+
+        <button onclick="addFavourite('Peanut Chutney (Verusenaga Pachadi)')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/verusenaga.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>Coconut Chutney (Kobbari Pachadi)</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+           Coconut Chutney is prepared using 1 cup of freshly grated coconut, 2 green chilies, 1 tablespoon of roasted chana dal, a small piece of ginger, salt to taste, 1 teaspoon of mustard seeds, 1 teaspoon of split urad dal, 1 dried red chili, a few curry leaves, and 2 teaspoons of oil.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Grind the grated coconut, green chilies, roasted chana dal, ginger, salt, and a little water into a smooth paste. Heat oil in a small pan, add mustard seeds, urad dal, dried red chili, and curry leaves, and allow them to splutter. Pour the tempering over the chutney, mix gently, and serve with Idli, Dosa, Vada, or Rava Dosa.
+        </p>
+
+        <button onclick="addFavourite('Coconut Chutney')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/coconut.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>Tomato Chutney (Tomato Pachadi)</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Tomato Chutney is made using 4 ripe tomatoes, 4 dried red chilies, 4 garlic cloves, 1 tablespoon of tamarind pulp, 2 tablespoons of oil, 1 teaspoon of mustard seeds, 1 teaspoon of cumin seeds, curry leaves, and salt to taste.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+           Heat oil in a pan and sauté the tomatoes, dried red chilies, garlic, and cumin until the tomatoes become soft. Allow the mixture to cool and grind it with tamarind and salt into a smooth paste. Prepare a tempering with mustard seeds and curry leaves, pour it over the chutney, and serve with Idli, Dosa, Chapati, or rice.
+        </p>
+
+        <button onclick="addFavourite('Tomato Chutney (Tomato Pachadi)')">
             ❤ Favourite
         </button>
 
@@ -78,35 +165,124 @@
 
     <div class="recipe-content">
 
-        <h2>🥥 Coconut Chutney</h2>
+        <h2>Gongura Chutney (Gongura Pachadi)</h2>
 
         <h3>Ingredients</h3>
 
         <p>
-            Coconut, Chana Dal,
-            Ginger and Green Chilies.
+            Gongura Chutney is prepared using 2 cups of fresh gongura (sorrel) leaves, 6 dried red chilies, 6 garlic cloves, 1 teaspoon of fenugreek seeds, 1 teaspoon of mustard seeds, 2 tablespoons of oil, and salt to taste.
         </p>
 
         <h3>Instructions</h3>
 
         <p>
-            Grind ingredients,
-            add tempering and serve.
+            Wash and sauté the gongura leaves until they wilt completely. Roast the dried red chilies, garlic, and fenugreek seeds separately. Grind all the ingredients together with salt into a coarse or smooth paste according to preference. Temper with mustard seeds if desired and serve with hot rice and ghee or as a side dish for breakfast items.
         </p>
 
-        <button onclick="addFavourite('Coconut Chutney')">
+        <button onclick="addFavourite('Gongura Chutney (Gongura Pachadi)')">
             ❤ Favourite
         </button>
 
     </div>
 
     <div class="recipe-image">
-        <img src="images/coconut.jpg">
+        <img src="images/gongura.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>Coriander Chutney (Kothimeera Pachadi)</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Coriander Chutney is made using 2 cups of fresh coriander leaves, 2 green chilies, 2 garlic cloves, 1 tablespoon of tamarind pulp, 2 tablespoons of roasted peanuts, salt to taste, and 2 teaspoons of oil.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+           Wash the coriander leaves thoroughly and blend them with green chilies, garlic, tamarind, roasted peanuts, salt, and a little water until smooth. Heat oil and prepare a simple tempering with mustard seeds and curry leaves if desired. Mix the tempering into the chutney and serve with Idli, Dosa, Chapati, or rice.
+        </p>
+
+        <button onclick="addFavourite('Coriander Chutney (Kothimeera Pachadi)')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/kothi.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>Dosakaya Chutney (Yellow Cucumber Chutney)</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+            Dosakaya Chutney is prepared using 2 cups of chopped yellow cucumber, 4 dried red chilies, 3 garlic cloves, 1 tablespoon of tamarind pulp, 1 teaspoon of cumin seeds, 2 tablespoons of oil, and salt to taste.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+            Heat oil in a pan and sauté the cucumber pieces, dried red chilies, garlic, and cumin seeds until the cucumber becomes soft. Allow the mixture to cool, then grind it with tamarind and salt into a smooth or slightly coarse chutney. Temper with mustard seeds and curry leaves if desired and serve with hot rice, Idli, or Dosa.
+        </p>
+
+        <button onclick="addFavourite('Dosakaya Chutney (Yellow Cucumber Chutney)')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/yellow.jpg">
+    </div>
+
+</div>
+
+<div class="recipe-card">
+
+    <div class="recipe-content">
+
+        <h2>Onion Chutney (Ullipaya Pachadi)</h2>
+
+        <h3>Ingredients</h3>
+
+        <p>
+           Onion Chutney is prepared using 2 large onions, 5 dried red chilies, 4 garlic cloves, 1 tablespoon of tamarind pulp, 2 tablespoons of oil, 1 teaspoon of mustard seeds, curry leaves, and salt to taste.
+        </p>
+
+        <h3>Instructions</h3>
+
+        <p>
+           Heat oil in a pan and sauté the onions, dried red chilies, and garlic until the onions become soft and lightly caramelized. Allow the mixture to cool before grinding it with tamarind and salt into a smooth paste. Prepare a tempering with mustard seeds and curry leaves, pour it over the chutney, mix well, and serve with Idli, Dosa, Uttapam, or steamed rice.
+        </p>
+
+        <button onclick="addFavourite('Onion Chutney (Ullipaya Pachadi)')">
+            ❤ Favourite
+        </button>
+
+    </div>
+
+    <div class="recipe-image">
+        <img src="images/onion.jpg">
     </div>
 
 </div>
 
 <script src="js/favourites.js"></script>
+<script src="js/search.js"></script>
 
 </body>
 </html>

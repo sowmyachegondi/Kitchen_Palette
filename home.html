@@ -19,7 +19,7 @@
 
     <nav>
 
-        <a href="index.html">Home</a>
+        <a href="home.html">Home</a>
 
         <a href="breakfast.html">
             Breakfast
@@ -90,23 +90,22 @@
 
     <div class="home-buttons">
 
-        <button onclick="openFavorites()">
+       <button onclick="window.location.href='favorites.html'">
+        ❤ Favourite
+    </button>
 
-            ❤ Favourite
-
-        </button>
-
-        <button onclick="openSearch()">
-
-            🔍 Search
-
-        </button>
+    <button onclick="searchRecipe()">
+        🔍 Search
+    </button>
 
     </div>
+
+   
 
 </div>
 
 <script src="js/search.js"></script>
+<script src="js/favourites.js"></script>
 
 </body>
 </html>

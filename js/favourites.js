@@ -1,60 +1,108 @@
-function addFavourite(recipe){
+// Add recipe to favourites
+function addFavourite(name) {
 
-    let favourites =
-        JSON.parse(
-            localStorage.getItem(
-                "favourites"
-            )
-        ) || [];
+    let card = event.target.closest(".recipe-card");
 
-    if(!favourites.includes(recipe)){
+    let recipe = {
+        name: name,
+        ingredients: card.querySelectorAll("p")[0].innerText,
+        instructions: card.querySelectorAll("p")[1].innerText,
+        image: card.querySelector("img").src
+    };
 
-        favourites.push(recipe);
+    let favorites =
+        JSON.parse(localStorage.getItem("favorites")) || [];
 
-        localStorage.setItem(
-            "favourites",
-            JSON.stringify(favourites)
-        );
+    let alreadyExists =
+        favorites.some(item => item.name === recipe.name);
 
-        alert(
-            recipe +
-            " added to favourites."
-        );
-    }
-}
-
-function showFavourites(){
-
-    let list =
-        document.getElementById(
-            "favoriteList"
-        );
-
-    if(!list) return;
-
-    let favourites =
-        JSON.parse(
-            localStorage.getItem(
-                "favourites"
-            )
-        ) || [];
-
-    if(favourites.length === 0){
-
-        list.innerHTML =
-        "<h2>No favorites added.</h2>";
-
+    if (alreadyExists) {
+        alert("Recipe already added to favourites.");
         return;
     }
 
-    favourites.forEach(recipe=>{
+    favorites.push(recipe);
 
-        list.innerHTML += `
-            <div class="recipe-card">
-                <h2>${recipe}</h2>
-            </div>
-        `;
-    });
+    localStorage.setItem(
+        "favorites",
+        JSON.stringify(favorites)
+    );
+
+    alert("Added to favourites!");
 }
 
-showFavourites();
+
+// Display favourites page
+const container =
+document.getElementById("favoritesContainer");
+
+if(container){
+
+    let favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
+
+    container.innerHTML="";
+
+    if(favorites.length===0){
+
+        container.innerHTML="<h2>No favourite recipes yet.</h2>";
+
+    }
+
+    favorites.forEach((recipe,index)=>{
+
+        container.innerHTML +=`
+
+        <div class="recipe-card">
+
+            <div class="recipe-content">
+
+                <h2>${recipe.name}</h2>
+
+                <h3>Ingredients</h3>
+
+                <p>${recipe.ingredients}</p>
+
+                <h3>Instructions</h3>
+
+                <p>${recipe.instructions}</p>
+
+                <button onclick="removeFavorite(${index})">
+
+                    ❌ Remove
+
+                </button>
+
+            </div>
+
+            <div class="recipe-image">
+
+                <img src="${recipe.image}">
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+
+// Remove recipe
+function removeFavorite(index){
+
+    let favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
+
+    favorites.splice(index,1);
+
+    localStorage.setItem(
+        "favorites",
+        JSON.stringify(favorites)
+    );
+
+    location.reload();
+
+}

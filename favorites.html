@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
-    <title>Favorites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet"
-    href="css/style.css">
+    <title>Favorite Recipes</title>
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -17,19 +20,41 @@
         Kitchen Palette
     </div>
 
+    <nav>
+
+        <a href="home.html">Home</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="lunch.html">Lunch/Dinner</a>
+        <a href="snacks.html">Snacks</a>
+        <a href="sweets.html">Sweets</a>
+        <a href="chutneys.html">Chutneys</a>
+        <a href="beverages.html">Beverages</a>
+
+    </nav>
+
 </header>
 
-<h1 class="page-title">
+<div class="search-container">
 
-    Favorite Recipes
+    <button onclick="searchRecipe()">
+        🔍 Search
+    </button>
 
-</h1>
-
-<div id="favoriteList">
+    <a href="favorites.html" class="fav-btn">
+        ❤ Favourites
+    </a>
 
 </div>
 
+<h1 class="page-title">
+    ❤️ Favorite Recipes
+</h1>
+
+<div id="favoritesContainer"></div>
+
 <script src="js/favourites.js"></script>
+<script src="js/search.js"></script>
 
 </body>
+
 </html>
