@@ -86,50 +86,6 @@ body{
 }
 
 /* NAVBAR */
-
-/* header{
-    width:95%;
-    margin:20px auto;
-    background:#7C2929;
-    padding:18px 30px;
-    border-radius:40px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-} */
-
-/* header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 1000;
-} */
-
-/* header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:#7C2929;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:18px 40px;
-
-    box-shadow:0 2px 10px rgba(0,0,0,0.2);
-    z-index:1000;
-} */
-
 header{
     position:sticky;
     top:0;
